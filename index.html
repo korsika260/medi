@@ -1,34 +1,34 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
   <title>MEDI</title>
   <link rel="stylesheet" type="text/css" href="style.css"/>
+  <link rel="stylesheet" href="vendor/splide.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body class="page">
 <div class="top-line">
-  <div class="top-line__vertical-line"></div>
+  <div class="vertical-line"></div>
   <img class="top-line__logo" src="images/top-line/logo.svg" alt="Логотип">
-  <div class="top-line__vertical-line"></div>
+  <div class="vertical-line"></div>
   <p class="top-line__phone">+7 (123) 456 78 90</p>
-  <div class="top-line__vertical-line"></div>
+  <div class="vertical-line"></div>
   <div class="top-line__saloons">
     <p class="top-line__text">Наши салоны</p>
     <img class="top-line__photo" src="images/top-line/group.svg" alt="кнопка">
   </div>
-  <div class="top-line__vertical-line"></div>
-  <img class="top-line__button" src="images/top-line/top-line__button.svg" alt="кнопка">
-  <div class="top-line__vertical-line"></div>
-  <img class="top-line__img" src="images/top-line/vk.svg" alt="Вконтакте">
-  <div class="top-line__vertical-line"></div>
-  <img class="top-line__img" src="images/top-line/youtube.svg" alt="Ютуб">
-  <div class="top-line__vertical-line"></div>
-  <img class="top-line__img" src="images/top-line/facebook.svg" alt="Фэйсбук">
-  <div class="top-line__vertical-line"></div>
-  <img class="top-line__img" src="images/top-line/instagram.svg" alt="Инстаграм">
-  <div class="top-line__vertical-line"></div>
-
+  <div class="vertical-line"></div>
+  <a href="#"><img class="top-line__button" src="images/top-line/top-line__button.svg" alt="кнопка"></a>
+  <div class="vertical-line"></div>
+  <a href="#"><img class="social-icon" src="images/top-line/vk.svg" alt="Вконтакте"></a>
+  <div class="vertical-line"></div>
+  <a href="#"><img class="social-icon" src="images/top-line/youtube.svg" alt="Ютуб"></a>
+  <div class="vertical-line"></div>
+  <a href="#"><img class="social-icon" src="images/top-line/facebook.svg" alt="Фэйсбук"></a>
+  <div class="vertical-line"></div>
+  <a href="#"><img class="social-icon" src="images/top-line/instagram.svg" alt="Инстаграм"></a>
+  <div class="vertical-line"></div>
 </div>
 
 <header class="header">
@@ -44,23 +44,66 @@
     </nav>
     <button class="header__main-menu-button">Запись на прием</button>
   </div>
-  <div class="header__column">
-    <div class="header__first-screen-desc">
-      <h1 class="header__first-screen-title">Косметология</h1>
-      <p class="header__first-screen-subtitle">Современный мир диктует новые каноны жизни: ухоженное лицо и тело,
-        стройная, подтянутая
-        фигура — сегодня это неотъемлемые черты привлекательной внешности, характеризующие человека
-        благополучного и
-        успешного.</p>
-      <button class="header__first-screen-button">подробнее</button>
+  <div class="splide">
+    <div class="splide__track">
+      <ul class="splide__list">
+        <li class="splide__slide">
+          <div class="header__column">
+            <div class="header__first-screen-desc">
+              <h1 class="header__first-screen-title">Косметология</h1>
+              <p class="header__first-screen-subtitle">Современный мир диктует новые каноны жизни: ухоженное лицо и
+                тело,
+                стройная, подтянутая
+                фигура — сегодня это неотъемлемые черты привлекательной внешности, характеризующие человека
+                благополучного и
+                успешного.</p>
+              <button class="header__first-screen-button">подробнее</button>
+            </div>
+            <img class="first-screen__slider" src="images/header/slider.jpg" alt="">
+          </div>
+        </li>
+        <li class="splide__slide"><div class="header__column">
+          <div class="header__first-screen-desc">
+            <h1 class="header__first-screen-title">Косметология</h1>
+            <p class="header__first-screen-subtitle">Современный мир диктует новые каноны жизни: ухоженное лицо и
+              тело,
+              стройная, подтянутая
+              фигура — сегодня это неотъемлемые черты привлекательной внешности, характеризующие человека
+              благополучного и
+              успешного.</p>
+            <button class="header__first-screen-button">подробнее</button>
+          </div>
+          <img class="first-screen__slider" src="images/header/slider.jpg" alt="">
+        </div></li>
+        <li class="splide__slide"><div class="header__column">
+          <div class="header__first-screen-desc">
+            <h1 class="header__first-screen-title">Косметология</h1>
+            <p class="header__first-screen-subtitle">Современный мир диктует новые каноны жизни: ухоженное лицо и
+              тело,
+              стройная, подтянутая
+              фигура — сегодня это неотъемлемые черты привлекательной внешности, характеризующие человека
+              благополучного и
+              успешного.</p>
+            <button class="header__first-screen-button">подробнее</button>
+          </div>
+          <img class="first-screen__slider" src="images/header/slider.jpg" alt="">
+        </div></li>
+      </ul>
     </div>
-    <img class="first-screen__slider" src="images/header/slider.jpg" alt="">
+    <div class="splide__arrows">
+      <button class="slide__arrow splide__prev">
+        <img src="images/header/prev.svg" alt="Стрелка назад">
+      </button>
+      <button class="slide__arrow splide__next">
+        <img src="images/header/next.svg" alt="Стрелка вперед">
+      </button>
+    </div>
   </div>
 
   <ul class="header__first-screen-items">
-    <li><a href="#" class="header__first-screen-item">Комплексные процедуры</a></li>
-    <li><a href="#" class="header__first-screen-item">Центр обучения</a></li>
-    <li><a href="#" class="header__first-screen-item">VIP клиентам</a></li>
+    <li class="header__first-screen-item"><a href="#" class="header__first-screen-link">Комплексные процедуры</a></li>
+    <li class="header__first-screen-item"><a href="#" class="header__first-screen-link">Центр обучения</a></li>
+    <li class="header__first-screen-item"><a href="#" class="header__first-screen-link">VIP клиентам</a></li>
   </ul>
 
 </header>
@@ -274,17 +317,18 @@
     Наши сертификаты на осуществление деятельности.
     Патенты на использование технологий.</p>
   <p class="last-line__paragraph">Политика конфиденциальности</p>
-  <div class="vertical_line"></div>
-  <img class="top-line__button" src="images/top-line/top-line__button.svg" alt="">
-  <div class="vertical_line"></div>
-  <img class="top-line__img" src="images/top-line/vk.svg" alt="">
-  <div class="vertical_line"></div>
-  <img class="top-line__img" src="images/top-line/youtube.svg" alt="">
-  <div class="vertical_line"></div>
-  <img class="top-line__img" src="images/top-line/facebook.svg" alt="">
-  <div class="vertical_line"></div>
-  <img class="top-line__img" src="images/top-line/instagram.svg" alt="">
+  <div class="vertical-line"></div>
+  <a href="#"><img class="top-line__button" src="images/top-line/top-line__button.svg" alt=""></a>
+  <div class="vertical-line"></div>
+  <a href="#"><img class="social-icon" src="images/top-line/vk.svg" alt=""></a>
+  <div class="vertical-line"></div>
+  <a href="#"><img class="social-icon" src="images/top-line/youtube.svg" alt=""></a>
+  <div class="vertical-line"></div>
+  <a href="#"><img class="social-icon" src="images/top-line/facebook.svg" alt=""></a>
+  <div class="vertical-line"></div>
+  <a href="#"><img class="social-icon" src="images/top-line/instagram.svg" alt=""></a>
 </div>
-
+<script src="js/splide.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

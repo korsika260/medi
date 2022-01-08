@@ -6,6 +6,7 @@
   --color-text-light: #FFFFFF;
   --color-text-dark: #000000;
   --color-bg: #FFFFFF;
+  --color-bg-accent: #4FBFA5;
 
   --fonts-main: Gilroy, 'Inter', Arial, Helvetica, sans-serif;
   --border-line: 1px solid #C4C4C4;
@@ -19,6 +20,7 @@
   background-color: var(--color-bg);
 }
 
+
 .top-line {
   margin: 0;
   padding: 0 0 0 313px;
@@ -28,7 +30,7 @@
   flex-direction: row;
 }
 
-.top-line__vertical-line {
+.vertical-line {
   margin: 0;
   padding: 0;
   height: 90px;
@@ -90,7 +92,7 @@
   height: 40px;
 }
 
-.top-line__img {
+.social-icon {
   padding: 0;
   margin: 33px 27px 0;
   width: 24px;
@@ -122,11 +124,10 @@
 
 .header__main-menu-link {
   padding: 0;
-  height: 27px;
   font-family: var(--fonts-main);
   font-weight: 500;
   font-size: 18px;
-  line-height: 150%;
+  line-height: 27px;
   color: var(--color-text-light);
   margin: 0 65px 0 0;
   cursor: pointer;
@@ -149,6 +150,33 @@
   color: var(--color-text-dark);
   border: none;
   cursor: pointer;
+}
+
+.splide__arrows {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  left: 683px;
+  top: 444px;
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+}
+
+.slide__arrow{
+  background-color: var(--color-bg-accent);
+  width: 60px;
+  height: 50px;
+  border: 1px solid #FFFFFF;
+  cursor: pointer;
+}
+
+.slide__arrow:hover {
+  background-color: var(--color-main-bg);
+}
+
+.splide__next{
+  border-left: none;
 }
 
 .header__column {
@@ -231,15 +259,9 @@
   padding: 0;
   width: 324px;
   background-color: var(--color-main-bg);
-  font-family: var(--fonts-main);
-  font-weight: 500;
-  font-size: 21px;
-  line-height: 150%;
-  color: var(--color-text-light);
   display: flex;
   align-items: center;
   justify-content: center;
-  text-decoration: none;
 }
 
 
@@ -250,6 +272,17 @@
 
 .header__first-screen-item:hover {
   background-color: #4FBFA5;
+}
+
+.header__first-screen-link {
+  margin: 0;
+  padding: 0;
+  font-family: var(--fonts-main);
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 32px;
+  color: var(--color-text-light);
+  text-decoration: none;
 }
 
 .innovations {
@@ -271,7 +304,7 @@
 
 .innovations__sticker {
   padding: 0;
-  margin: 37px 0 0 40px;
+  margin: 36px 0 0 40px;
   width: 125px;
   height: 40px;
   background-color: #4FBFA5;
@@ -333,7 +366,7 @@
 
 .innovations__two-column {
   padding: 0;
-  margin: 35px 0 0 134px;
+  margin: 36px 0 0 134px;
   width: 636px;
   height: 485px;
   display: flex;
@@ -368,7 +401,7 @@
   padding: 0;
   display: flex;
   flex-direction: row;
-  margin: 32px 0 -17px;
+  margin: 33px 0 -18px;
 }
 
 .two-column__groop:last-child {
@@ -416,12 +449,12 @@
   margin: 0;
   padding: 0;
   width: 306px;
-  height: 400px;
+  height: 418px;
 }
 
 .innovations__overlay {
   position: absolute;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.3);
   top: 0;
   bottom: 0;
   left: 0;
@@ -489,7 +522,7 @@
 
 .news__text {
   padding: 0;
-  margin: 32px 0 0;
+  margin: 31px 0 0;
   width: 526px;
   height: 151px;
   background-color: var(--color-main-bg);
@@ -698,7 +731,7 @@
   padding: 0;
   width: 158px;
   height: 181px;
-  margin: 0 0 39px;
+  margin: 0 0 30px;
 }
 
 .footer__column-title {
@@ -715,19 +748,17 @@
 
 .footer__column-items {
   padding: 0;
-  margin: 20px 0 0;
+  margin: 12px 0 0;
   list-style: none;
 }
 
 .footer__column-item {
   padding: 0 0 15px;
   margin: 0 0 30px;
-  width: 92px;
-  height: 21px;
   font-family: var(--fonts-main);
   font-weight: 500;
   font-size: 14px;
-  line-height: 30px;
+  line-height: 36px;
   color: var(--color-text-dark);
   text-decoration: none;
 
@@ -803,7 +834,7 @@
 
 .footer__contact-button {
   padding: 0;
-  margin: 15px 0 0;
+  margin: 14px 0 0;
   width: 164px;
   height: 45px;
   background-color: var(--color-main-bg);
@@ -822,7 +853,7 @@
 
 .last-line {
   padding: 0;
-  margin: 79px auto 0;
+  margin: 77px auto 0;
   width: 1295px;
   height: 91px;
   border: var(--border-line);
@@ -844,7 +875,8 @@
 
 .last-line__paragraph {
   padding: 0;
-  margin: 20px 70px 16px 0;
+  padding-top: 38px;
+  margin: 1px 70px 16px 0;
   width: 178px;
   height: 18px;
   font-family: var(--fonts-main);
@@ -853,4 +885,7 @@
   line-height: 150%;
   text-decoration: underline;
   color: var(--color-text-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
