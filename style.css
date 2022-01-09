@@ -12,14 +12,12 @@
   --border-line: 1px solid #C4C4C4;
 }
 
-
 .page {
   margin: 0 auto;
   padding: 0;
   width: 1920px;
   background-color: var(--color-bg);
 }
-
 
 .top-line {
   margin: 0;
@@ -54,7 +52,6 @@
   font-size: 16px;
   line-height: 19px;
   color: var(--color-text-dark);
-
 }
 
 .top-line__saloons {
@@ -64,7 +61,6 @@
   margin: 37px 30px 0;
   display: flex;
   flex-direction: row;
-
 }
 
 .top-line__text {
@@ -104,7 +100,7 @@
   padding: 0;
   width: 1920px;
   height: 700px;
-  background-color: #4FBFA5;
+  background-color: var(--color-bg-accent);
 }
 
 .header__main-menu {
@@ -163,7 +159,7 @@
   box-sizing: border-box;
 }
 
-.slide__arrow{
+.slide__arrow {
   background-color: var(--color-bg-accent);
   width: 60px;
   height: 50px;
@@ -175,7 +171,7 @@
   background-color: var(--color-main-bg);
 }
 
-.splide__next{
+.splide__next {
   border-left: none;
 }
 
@@ -192,6 +188,14 @@
   display: flex;
   flex-direction: column;
 }
+
+.header__first-screen-slider {
+  margin: 23px 0 0;
+  padding: 0 0 0 134px;
+  width: 746px;
+  height: 533px;
+}
+
 
 .header__first-screen-title {
   margin: 0;
@@ -264,14 +268,13 @@
   justify-content: center;
 }
 
-
 .header__first-screen-item:first-child {
   width: 648px;
 }
 
 
 .header__first-screen-item:hover {
-  background-color: #4FBFA5;
+  background-color: var(--color-bg-accent);;
 }
 
 .header__first-screen-link {
@@ -307,7 +310,7 @@
   margin: 36px 0 0 40px;
   width: 125px;
   height: 40px;
-  background-color: #4FBFA5;
+  background-color: var(--color-bg-accent);
   font-family: var(--fonts-main);
   font-weight: 500;
   font-size: 18px;
@@ -386,7 +389,7 @@
   padding: 0;
   width: 186px;
   height: 40px;
-  background-color: #4FBFA5;
+  background-color: var(--color-bg-accent);
   font-family: var(--fonts-main);
   font-weight: 500;
   font-size: 18px;
@@ -500,8 +503,7 @@
   margin: 0;
   padding: 0;
   width: 526px;
-  height: 504px;
-  background-color: #4FBFA5;
+  background-color: var(--color-bg-accent);
 }
 
 .news__sticker {
@@ -520,48 +522,30 @@
   justify-content: center;
 }
 
-.news__text {
+.news__list {
+  display: flex;
+  flex-direction: column;
   padding: 0;
+
   margin: 31px 0 0;
   width: 526px;
-  height: 151px;
+  cursor: pointer;
+}
+
+.news__item {
+  margin: 0;
+  padding: 35px 40px;
+  font-family: var(--fonts-main);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: var(--color-text-light);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.news__item:hover {
   background-color: var(--color-main-bg);
-}
-
-.news__paragraph {
-  padding: 35px 0 0;
-  margin: 0 0 0 40px;
-  width: 446px;
-  height: 81px;
-  font-family: var(--fonts-main);
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 150%;
-  color: var(--color-text-light);
-}
-
-.news__info {
-  padding: 0;
-  margin: 37px 0 0 40px;
-  width: 446px;
-  height: 54px;
-  font-family: var(--fonts-main);
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 150%;
-  color: var(--color-text-light);
-}
-
-.news__info-text {
-  padding: 0;
-  margin: 70px 0 35px 40px;
-  width: 446px;
-  height: 54px;
-  font-family: var(--fonts-main);
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 150%;
-  color: var(--color-text-light);
 }
 
 .news__two-column {
@@ -589,7 +573,7 @@
 .news__two-column-item {
   margin: 0 0 14px 13px;
   padding: 0 0 0 8px;
-  list-style-image: url(images/news/rectangle20.svg);
+  list-style-image: url(images/news/rectangle.svg);
   width: 629px;
   font-family: var(--fonts-main);
   font-weight: 500;
@@ -667,7 +651,7 @@
   margin: 0 0 0 30px;
   width: 148px;
   height: 40px;
-  background-color: #4FBFA5;
+  background-color: var(--color-bg-accent);
   font-family: var(--fonts-main);
   font-weight: 500;
   font-size: 18px;
@@ -706,6 +690,7 @@
   margin: 37px 30px 0 15px;
   width: 50px;
   height: 40px;
+  cursor: pointer;
 }
 
 .footer {
@@ -849,6 +834,7 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: var(--color-text-light);
+  cursor: pointer;
 }
 
 .last-line {
@@ -874,8 +860,7 @@
 }
 
 .last-line__paragraph {
-  padding: 0;
-  padding-top: 38px;
+  padding: 38px 0 0;
   margin: 1px 70px 16px 0;
   width: 178px;
   height: 18px;
