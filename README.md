@@ -1,4 +1,4 @@
-#Сайт косметологической клиники [MEDI](https://korsika260.github.io/medi/)
+# Сайт косметологической клиники [MEDI](https://korsika260.github.io/medi/)
 
 Тренировочный проект по верстке
 
